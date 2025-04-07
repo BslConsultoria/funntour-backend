@@ -1,0 +1,14 @@
+fastapi==0.109.2
+uvicorn==0.27.1
+sqlalchemy==2.0.27
+# asyncio já vem incluso no Python 3.12
+aiomysql==0.2.0
+pymysql==1.1.0
+pydantic==2.6.1
+python-dotenv==1.0.0
+passlib==1.7.4
+python-jose==3.3.0
+python-multipart==0.0.9
+alembic==1.13.1
+# Especificando uma versu00e3o do greenlet compatu00edvel com Python 3.12
+greenlet==3.0.1
