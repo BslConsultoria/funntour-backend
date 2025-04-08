@@ -5,7 +5,7 @@ import logging
 import time
 import asyncio
 
-from app.routes import pais, estado, cidade
+from app.routes import pais, estado, cidade, perfil, usuario, auth
 from app.config.database import init_db
 
 # Configuração de logging
@@ -73,6 +73,9 @@ async def global_exception_handler(request: Request, exc: Exception):
 app.include_router(pais.router)
 app.include_router(estado.router)
 app.include_router(cidade.router)
+app.include_router(perfil.router)
+app.include_router(usuario.router)
+app.include_router(auth.router)
 
 if __name__ == "__main__":
     import uvicorn

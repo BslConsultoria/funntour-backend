@@ -14,4 +14,4 @@ class Estado(Base):
     dt_exclusao = Column(DateTime, nullable=True)
 
     # Relacionamento com Pais
-    pais = relationship("Pais")
+    pais = relationship("Pais", lazy="joined")

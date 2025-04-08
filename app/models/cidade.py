@@ -14,4 +14,4 @@ class Cidade(Base):
     dt_exclusao = Column(DateTime, nullable=True)
 
     # Relacionamento com Estado
-    estado = relationship("Estado")
+    estado = relationship("Estado", lazy="joined")
